@@ -1,0 +1,29 @@
+/* src/assets/styles.css */
+.tt-transcript {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.tt-word {
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.tt-word:hover {
+  background-color: #f0f0f0;
+}
+
+.tt-current-word {
+  background-color: #ffeb3b;
+}
+
+.tt-previous-word {
+  color: gray;
+}
+
+.tt-current-block-container,
+.tt-current-phrase-container {
+  background-color: rgba(255, 235, 59, 0.3);
+}

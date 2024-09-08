@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transcript Tracer Test</title>
+    <style>
+        .tt-transcript {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .tt-current-word {
+            background-color: #93c5fd !important;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <audio src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.wav"
+        style="display: block !important;" controls>
+        <track kind="metadata"
+            src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.vtt" />
+    </audio>
+
+    <div class="tt-transcript"
+        data-tt-media-urls="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.wav">
+        Welcome to the transcript tracer test. In this demo, we will synchronize the transcript with the audio. You can
+        generate wav or mp3 files and VTT captions using the Azure Speech Service. Let's get started. </div>
+
+    <script src="./dist/bundle.js"></script>
+    <script>
+        // Fetch and initialize the transcript
+        fetch('https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.vtt')
+            .then(response => response.text())
+            .then(transcript => {
+                // Once the transcript is fetched, initialize the TranscriptTracer
+                TranscriptTracer.loadTranscriptTracer({}, transcript);
+            })
+            .catch(error => console.error('Error loading the transcript:', error));
+    </script>
+</body>
+
+</html>
