@@ -11,7 +11,7 @@ Transcript Tracer is a tool that synchronizes text transcripts with audio or vid
 
 ## Demo - (Custom styled)
 
-<video width="560" height="100%" controls>
+<video width="560" height="315" controls>
   <source src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/demo-f.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
