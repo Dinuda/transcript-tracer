@@ -1,5 +1,5 @@
 {
-  "name": "transcript-tracer",
+  "name": "@dinuda/transcript-tracer",
   "version": "1.0.0",
   "description": "a tool that synchronizes text transcripts with corresponding audio segments using WebVTT (VTT) files",
   "main": "index.ts",
