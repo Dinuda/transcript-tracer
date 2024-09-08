@@ -11,7 +11,8 @@ Transcript Tracer is a tool that synchronizes text transcripts with audio or vid
 
 ## Demo - (Custom styled)
 
-<video width="100%" height="100%" controls>
+<br>
+<video width="560" height="315" controls style="max-width: 100%; text-align: center;">
   <source src="./src/assets/demo-f.mp4" type="video/mp4">
 </video>
 
