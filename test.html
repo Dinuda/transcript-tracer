@@ -24,8 +24,7 @@
 
 <body>
 
-    <audio src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.wav"
-        style="display: block !important;" controls>
+    <audio src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.wav" controls>
         <track kind="metadata"
             src="https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.vtt" />
     </audio>
@@ -39,7 +38,8 @@
     <script>
         // Fetch and initialize the transcript
         fetch('https://raw.githubusercontent.com/Dinuda/transcript-tracer/master/src/assets/test.vtt')
-            .then(response => response.text())
+            .then(response => response.text() // optionally set to transcript text
+            )
             .then(transcript => {
                 // Once the transcript is fetched, initialize the TranscriptTracer
                 TranscriptTracer.loadTranscriptTracer({}, transcript);
